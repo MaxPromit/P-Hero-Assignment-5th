@@ -30,7 +30,7 @@
     <!-- header End -->
 
     <!-- player Section -->
-    <section>
+    <section id="player_section">
       <div class="container">
         <div class="cart_wrapper d-grid">
           <div class="row">
@@ -43,9 +43,9 @@
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title">Leo Messi</h5>
+                  <h5 id="messi_name_value" class="card-title">Leo Messi</h5>
                   <p class="card-text">Country: Argentina</p>
-                  <button class="btn btn-primary px-5">Select</button>
+                  <button id="messi_btn" class="btn btn-primary px-5">Select</button>
                 </div>
               </div>
             
@@ -59,9 +59,9 @@
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title">Christiano Ronaldo</h5>
+                  <h5 id="ronaldo_name_value" class="card-title">Christiano Ronaldo</h5>
                   <p class="card-text">Country: Portugal</p>
-                  <button class="btn btn-primary px-5">Select</button>
+                  <button id="ronaldo_btn" class="btn btn-primary px-5">Select</button>
                 </div>
               </div>
             
@@ -75,25 +75,23 @@
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title">Kun Aguero</h5>
+                  <h5 id="aguero_name_value" class="card-title">Kun Aguero</h5>
                   <p class="card-text">Country: Argentina</p>
-                  <button class="btn btn-primary px-5">Select</button>
+                  <button id="aguero_btn" class="btn btn-primary px-5">Select</button>
                 </div>
               </div>
             
           </div>
             <div class="col-3 gy-3">
                 
-              <div class="card">
-
-                <div class="img_box">
-                  <img src="image/aguero.png" class="card-img-top" alt="...">
-                </div>
-
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <button class="btn btn-primary px-5">Select</button>
+              <div class="selected_player">
+                  <h2 class="text-center"> Selected - V</h2>
+                  <ol id="player_ordered_list">
+                    <!-- <li>Messi</li>
+                    <li>Salah</li>
+                    <li>Ramos</li> -->
+                  </ol>
+             
                 </div>
               </div>
             
@@ -109,9 +107,9 @@
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title">Moss Salah</h5>
+                  <h5 id="salah_name_value" class="card-title">Moss Salah</h5>
                   <p class="card-text">Country: Egypt</p>
-                  <button class="btn btn-primary px-5">Select</button>
+                  <button id="salah_btn" class="btn btn-primary px-5">Select</button>
                 </div>
               </div>
             
@@ -125,9 +123,9 @@
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title">Gerard Pique</h5>
+                  <h5 id="pk_name_value" class="card-title">Gerard Pique</h5>
                   <p class="card-text">Country: Spain</p>
-                  <button class="btn btn-primary px-5">Select</button>
+                  <button id="pk_btn" class="btn btn-primary px-5">Select</button>
                 </div>
               </div>
             
@@ -141,9 +139,9 @@
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title">Sergio Ramos</h5>
+                  <h5 id="ramos_name_value" class="card-title">Sergio Ramos</h5>
                   <p class="card-text">Country: Spain</p>
-                  <button class="btn btn-primary px-5">Select</button>
+                  <button id="ramos_btn" class="btn btn-primary px-5">Select</button>
                 </div>
               </div>
             
@@ -175,9 +173,9 @@
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title">Luka Modric</h5>
+                  <h5 id="modric_name_value" class="card-title">Luka Modric</h5>
                   <p class="card-text">Country: Crosia</p>
-                  <button class="btn btn-primary px-5">Select</button>
+                  <button id="modric_btn" class="btn btn-primary px-5">Select</button>
                 </div>
               </div>
             
@@ -191,9 +189,9 @@
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title">Harry Kane</h5>
+                  <h5 id="kane_name_value" class="card-title">Harry Kane</h5>
                   <p class="card-text">Country: England</p>
-                  <button class="btn btn-primary px-5">Select</button>
+                  <button id="kane_btn" class="btn btn-primary px-5">Select</button>
                 </div>
               </div>
             
@@ -207,9 +205,9 @@
                 </div>
 
                 <div class="card-body">
-                  <h5 class="card-title">Kylor Navas</h5>
+                  <h5 id="navas_name_value" class="card-title">Kylor Navas</h5>
                   <p class="card-text">Country: Switzerland</p>
-                  <button class="btn btn-primary px-5">Select</button>
+                  <button id="navas_btn" class="btn btn-primary px-5">Select</button>
                 </div>
               </div>
             
@@ -222,7 +220,9 @@
 
     <!-- player Section End -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script> -->
 
+
+    <script src="js/select.js"></script>
   </body>
 </html>

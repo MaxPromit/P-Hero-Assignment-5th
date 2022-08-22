@@ -13,7 +13,7 @@
   background-size: cover;
     height: 100vh;
     width: 1470px;
-   margin-bottom: 100px;
+
 }
 
 #header_main{
@@ -32,6 +32,12 @@
     color: white;
         text-align: center;
 }
+/* player section */
+#player_section{
+    background-color: #ddd;
+    padding-top: 50px;
+}
+
 
 .card-body{
     margin: auto;
@@ -44,4 +50,13 @@
 .img_box img {
     height: 100%;
     object-fit: cover;
+}
+
+/* selected player */
+
+.selected_player{
+    height: 345px;
+    border-radius: 6px;
+    background-color: black;
+    color: white;
 }
