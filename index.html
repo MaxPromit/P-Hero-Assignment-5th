@@ -148,19 +148,23 @@
           </div>
             <div class="col-3 gy-3">
                 
-              <div class="card">
+              <div class="card p-3">
+                <h2 class="text-center">Budget</h2>
+                <p>Per Player <input id="per_player_field" type="number"></p>
+                <button id="calculate_btn" class="mb-3 btn btn-primary px-5">Calculate </button>
+              
+              
+                <h5 class="mb-2">Player Expenses: $<span id="player_expenses">00</span></h5>
 
-                <div class="img_box">
-                  <img src="image/neuar.png" class="card-img-top" alt="...">
-                </div>
+                <p>Manager : <input id="manager_btn" type="number"></p>
 
-                <div class="card-body">
-                  <h5 class="card-title">Manual Neuar</h5>
-                  <p class="card-text">Country: Germany</p>
-                  <button class="btn btn-primary px-5">Select</button>
-                </div>
-              </div>
-            
+                <p>Coach : <input id="coach_btn" class="ms-3" type="number"></p>
+
+                <button id="calculate_total_btn" class="mb-3 btn btn-primary px-5">Calculate Total</button>
+
+                <h3>Total : $<span id="total_amount">00</span></h3>
+              
+            </div>
           </div>
         </div>
           <div class="row">

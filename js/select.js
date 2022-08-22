@@ -16,6 +16,64 @@ function getPlayerValue(buttonValue){
     
 }
 
+// calculation Part 
+
+function howManyPlayer(){
+    const mainContainer = document.getElementById('player_ordered_list');
+    const numb = mainContainer.children.length;
+    return numb;
+}
+
+
+document.getElementById('calculate_btn').addEventListener('click', function playerExpense(amount){
+  const player = howManyPlayer();
+//   console.log(player)
+
+const perPlayerField =   document.getElementById('per_player_field');
+const perPlayerFieldValueString = perPlayerField.value;
+const perPlayerFieldValue = parseInt(perPlayerFieldValueString);
+// console.log(perPlayerFieldValue)
+
+// expenses
+const overAllPlayerExpenses = perPlayerFieldValue * player;
+
+const totalExpenses = document.getElementById('player_expenses');
+const totalExpensesAmount = totalExpenses.innerText;
+
+totalExpenses.innerText = overAllPlayerExpenses;
+
+return overAllPlayerExpenses;
+})
+
+document.getElementById('calculate_total_btn').addEventListener('click',function(){
+    const totalExpenses = document.getElementById('player_expenses').innerText;
+    const totalExpensesAmount = parseInt(totalExpenses);
+    // console.log(totalExpensesAmount)
+
+    // manager field
+    const managerField = document.getElementById('manager_btn');
+    const managerFieldString = managerField.value;
+    const managerFieldValue = parseInt(managerFieldString);
+    // console.log(managerFieldValue)
+
+    // coach
+    const coachField = document.getElementById('coach_btn');
+    const coachFieldString = coachField.value;
+    const coachFieldValue = parseInt(coachFieldString);
+    // console.log(coachFieldValue)
+
+    // total 
+
+    const newTotalAmount = totalExpensesAmount + managerFieldValue + coachFieldValue;
+
+    const totalAmount = document.getElementById('total_amount');
+    const totalAmountValue = totalAmount.innerText;
+
+    totalAmount.innerText = newTotalAmount;
+})
+
+
+
 
 
 
