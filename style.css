@@ -5,7 +5,7 @@
     margin: 0px;
     padding: 0px;
     /* font-family: 'Nanum Myeongjo', serif; */
-    font-family: 'Lobster Two', cursive;
+    
 }
 .main_container{
   background-image: url(/image/bg.png);
@@ -13,7 +13,7 @@
   background-size: cover;
     height: 100vh;
     width: 1470px;
-   
+   margin-bottom: 100px;
 }
 
 #header_main{
@@ -25,9 +25,23 @@
     font-size: 60px;
     color: orangered;
     font-weight: bolder;
+    font-family: 'Lobster Two', cursive;
 }
 .post_info{
     font-family: 'Poppins', sans-serif;
     color: white;
         text-align: center;
+}
+
+.card-body{
+    margin: auto;
+    text-align: center;
+}
+.img_box {
+    height: 200px;
+}
+
+.img_box img {
+    height: 100%;
+    object-fit: cover;
 }
