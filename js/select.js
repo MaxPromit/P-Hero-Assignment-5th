@@ -2,11 +2,23 @@ console.log('select');
 
 function getPlayerValue(buttonValue){
     const mainContainer = document.getElementById('player_ordered_list');
+    const numb = mainContainer.children.length;
+    if(numb >= 5){
+        alert('You Cant Pick More Than 5 Player');
+        return;
+    }
+
+
     const tableContainer = document.createElement('li');
     tableContainer.innerText = buttonValue
 
     mainContainer.appendChild(tableContainer);
+    
 }
+
+
+
+
 
 // 1 Messi 
 
